@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📍 GeoAttend – Smart Attendance Management System
 
-## Getting Started
+## 📌 Project Overview
 
-First, run the development server:
+**GeoAttend** is a smart, cloud-based attendance management system designed to simplify and automate attendance tracking for educational institutions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The system provides a centralized platform for managing **students, teachers, class timetables, attendance records, and schedules**. It is designed around a **Function-as-a-Service (FaaS)** architecture, allowing backend operations to be executed through serverless functions without the need to maintain traditional backend servers.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project aims to make attendance management more **efficient, reliable, scalable, and accessible** while reducing manual attendance-related work for teachers and administrators.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Objectives
 
-## Learn More
+- 📋 Digitize and simplify the attendance management process.
+- 👨‍🏫 Allow teachers to manage and record student attendance efficiently.
+- 👨‍🎓 Maintain organized student attendance records.
+- 🗓️ Manage class timetables and teacher schedules.
+- 👩‍🏫 Support class-teacher and subject-wise schedule management.
+- ☁️ Utilize cloud-based and serverless technologies for backend operations.
+- 🔐 Provide secure authentication and controlled access to system features.
+- 📊 Make attendance information easier to monitor and manage.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 👨‍🎓 Student Management
 
-## Deploy on Vercel
+- Student information management.
+- View attendance records.
+- Access class and timetable information.
+- Track attendance status.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👨‍🏫 Teacher Management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Teacher authentication and access.
+- View assigned classes and subjects.
+- Manage attendance for respective classes.
+- Access teaching schedules and timetables.
+
+### 🗓️ Timetable & Schedule Management
+
+The system provides timetable-based organization of academic activities.
+
+It can be used to manage:
+
+- Class schedules
+- Subject schedules
+- Teacher schedules
+- Class-teacher assignments
+- Period-wise academic activities
+
+This helps ensure that attendance is associated with the appropriate **class, subject, teacher, and scheduled period**.
+
+### 📍 Attendance Management
+
+GeoAttend is designed to provide a structured approach to attendance recording.
+
+Attendance data can be associated with relevant class and schedule information, helping maintain accurate and organized attendance records.
+
+### ☁️ Serverless Architecture
+
+The backend functionality follows a **Function-as-a-Service (FaaS)** approach.
+
+Instead of relying on a continuously running traditional server, individual backend operations can be handled through serverless functions.
+
+This provides benefits such as:
+
+- Scalability
+- Reduced server management
+- Event-driven execution
+- Efficient resource utilization
+- Easier deployment and maintenance
+
+---
+
+## 🏗️ System Architecture
+
+The project follows a modern web and serverless architecture:
+
+```text
+                 ┌──────────────────────┐
+                 │      User / Client   │
+                 │  Students & Teachers │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │     Next.js Frontend │
+                 │   Web Application    │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │   Serverless / FaaS  │
+                 │      Functions       │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │      Supabase        │
+                 │ Authentication + DB  │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ Attendance / Student │
+                 │ Teacher / Timetable  │
+                 │       Records        │
+                 └──────────────────────┘
