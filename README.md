@@ -61,9 +61,8 @@ Attendance data can be associated with relevant class and schedule information, 
 
 ### ☁️ Serverless Architecture
 
-The backend functionality follows a **Function-as-a-Service (FaaS)** approach.
-
 Instead of relying on a continuously running traditional server, individual backend operations can be handled through serverless functions.
+The backend functionality follows a **Function-as-a-Service (FaaS)** approach.
 
 This provides benefits such as:
 
