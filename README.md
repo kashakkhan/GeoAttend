@@ -50,6 +50,8 @@ It can be used to manage:
 - Teacher schedules
 - Class-teacher assignments
 - Period-wise academic activities
+- mark attendance via camera
+- uses geofencing so that no one can mark outside college campus
 
 This helps ensure that attendance is associated with the appropriate **class, subject, teacher, and scheduled period**.
 
